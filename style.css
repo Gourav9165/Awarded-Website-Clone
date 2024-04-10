@@ -1,0 +1,507 @@
+@font-face {
+    font-family: "Neue Haas Grotesk Text Pro";
+    src: url(/Neue\ Haas\ Grotesk\ Text\ Pro.ttf);
+}
+
+@font-face {
+    font-family: "DS-Digital";
+    src: url(/DS-Digital.ttf);
+}
+
+@font-face {
+    font-family: "Ogg";
+    src: url(/Ogg.ttf);
+}
+
+@font-face {
+    font-family: "Scto Grotesk A Medium";
+    src: url(/Scto\ Grotesk\ A\ Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home #circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    height: 55vw;
+    border-radius: 50%;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+#circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#top {
+    position: absolute;
+    transform: rotate(-180deg);
+    width: 100%;
+    height: 100%;
+}
+
+#btm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#btm :nth-child(1) {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+#btm :nth-child(2) {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+#btm :nth-child(3) {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#top :nth-child(1) {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+#top :nth-child(2) {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+#top :nth-child(3) {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#smcircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+    padding: 30px 50px;
+}
+
+#btmnav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9;
+    padding: 30px 50px;
+    bottom: 0;
+}
+
+#btmnav #img1 {
+    width: 100px;
+    z-index: 999;
+}
+
+#btmnav #img2 {
+    width: 95px;
+}
+
+#nav h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Neue Haas Grotesk Text Pro";
+    color: rgba(0, 0, 0, 0.75);
+}
+
+#color,
+#text {
+    display: flex;
+}
+
+#color #color1 {
+    width: 0.9vw;
+    height: 0.9vw;
+    background-color: #f2f2f2;
+}
+
+#color #color2 {
+    width: 0.9vw;
+    height: 0.9vw;
+    background-color: #BFBFBF;
+}
+
+#color #color3 {
+    width: 0.9vw;
+    height: 0.9vw;
+    background-color: #808080;
+}
+
+#color #color4 {
+    width: 0.9vw;
+    height: 0.9vw;
+    background-color: #595959;
+}
+
+#color #color5 {
+    width: 0.9vw;
+    height: 0.9vw;
+    background-color: #404040;
+}
+
+#color #color6 {
+    width: 0.9vw;
+    height: 0.9vw;
+    background-color: #000;
+}
+
+#text {
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "DS-Digital";
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+#centerimg {
+    width: 30vw;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+#centerimg h5 {
+    font-family: "Scto Grotesk A Medium";
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#centerimg #cimage {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+#cimage img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#second {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#overlay>h1#gallery {
+    position: absolute;
+    bottom: 1%;
+    z-index: 99;
+    font-family: "Neue Haas Grotesk Text Pro";
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    font-size: 11.8vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    pointer-events: none;
+}
+
+#gola {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(16, 80, 153);
+}
+
+#overlay>h1#pf {
+    position: absolute;
+    bottom: -69%;
+    z-index: 9999;
+    width: 70%;
+    font-family: "Neue Haas Grotesk Text Pro";
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 570;
+    font-size: 11.8vw;
+    left: 53%;
+    transform: translate(-50%, 0%) rotate(30deg);
+    transform-origin: 0% 50%;
+    pointer-events: none;
+}
+
+#bluepart {
+    position: absolute;
+    width: 32.4vw;
+    height: 32vw;
+    top: 120%;
+    background-color: rgb(16, 80, 153);
+    color: #fff;
+    z-index: 98;
+    font-family: "Neue Haas Grotesk Text Pro";
+    display: flex;
+    flex-direction: column;
+}
+
+#bluepart #text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: #fff;
+    font-family: "Neue Haas Grotesk Text Pro";
+    letter-spacing: 1px;
+    font-size: 0.9vw;
+    top: 37%;
+    left: 12%;
+    /* transform: translate(-50%, -50%); */
+}
+
+#text #t1 {
+    position: absolute;
+    margin-top: 32px;
+    left: 31.9%;
+    line-height: 22px;
+}
+
+#bluepart h1 span {
+    font-family: "Scto Grotesk A Medium";
+    font-size: 0.9vw;
+}
+
+#bluepart #t2 {
+    position: absolute;
+    bottom: 12.5%;
+    left: 13%;
+    font-size: 2.3vw;
+    font-family: "DS-Digital";
+    font-weight: lighter;
+}
+
+#stop {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 58.5%;
+    border-bottom: 2px solid #dadada;
+}
+
+#sbtm {
+    width: 100%;
+    height: 41.5%;
+}
+
+.circle {
+    position: absolute;
+    top: 150%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    width: 19.8vw;
+    height: 19.8vw;
+    border-radius: 50%;
+}
+
+#stop .pu {
+    left: 41.35%;
+    background: linear-gradient(to right, rgb(16, 80, 153), rgb(16, 80, 153));
+    z-index: 1;
+}
+
+#sbtm {
+    position: relative;
+    color: rgba(0, 0, 0, 0.82);
+}
+
+#stop .pi {
+    left: 58.65%;
+    background-color: rgb(220, 240, 207);
+}
+
+#sbtm p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+}
+
+#sbtm p:nth-child(2) {
+    opacity: 0;
+}
+
+#stop h1 {
+    position: absolute;
+    bottom: -14.5%;
+    left: 100%;
+    font-size: 26vw;
+    font-family: "Scto Grotesk A Medium";
+    line-height: 1;
+    font-weight: 500;
+    z-index: 9;
+    color: #ffffff;
+}
+
+@media (max-width: 500px) {
+    #nav {
+        padding: 20px;
+    }
+
+    #nav h1 {
+        font-size: 15px;
+    }
+    #color #color1,
+    #color #color2,
+    #color #color3,
+    #color #color4,
+    #color #color5,
+    #color #color6 {
+        width: 2vw;
+        height: 2vw;
+    }
+    #top-right #text{
+        font-size: 13px;
+        color: #000;
+    }
+    #centerimg{
+        width: 80vw;
+    }
+    #centerimg #cimage{
+        height: 200px;
+    }
+    #centerimg h5{
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    #btmnav{
+        padding: 10px;
+    }
+    #btmnav #img1{
+        width: 90px;
+    }
+    #btmnav #img2{
+        width: 80px;
+    }
+    #bluepart{
+        width: 80vw;
+        height: 80vw;
+    }
+    #bluepart #text{
+        font-size: 2.5vw;
+        top: 30%;
+    }
+    #bluepart #t2{
+        font-size: 6vw;
+    }
+    #bluepart h1 span{
+        font-size: 2.5vw;
+    }
+    #overlay>h1#gallery{
+        font-size: 15vw;
+        font-weight: 600;
+        bottom: 10%;
+    }
+    #overlay>h1#pf{
+        font-size: 12.2vw;
+        left: 50%;
+        font-weight: 600;
+    }
+    #gola{
+        width: 20vw;
+        height: 20vw;
+    }
+    #home #circle{
+        width: 122vw;
+        height: 122vw;
+    }
+    #smcircle{
+        width: 75vw;
+        height: 75vw;
+    }
+    #sbtm p{
+        font-size: 8.5vw;
+        width: 95%;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .circle{
+        width: 45vw;
+        height: 45vw;
+    }
+    #stop .pu{
+        left: 35%;
+    }
+    #stop .pi{
+        left: 65%;
+    }
+    #stop h1{
+        font-size: 65vw;
+        bottom: -8%;
+    }
+    #sbtm #two{
+        font-size: 7vw;
+    }
+}   
